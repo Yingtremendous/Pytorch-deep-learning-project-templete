@@ -110,6 +110,7 @@ do_train(cfg, model, train_loader, val_loader, optimizer, None, F.cross_entropy)
 │
 ├── modeling            - this folder contains any model of your project.
 │   └── example_model.py
+     └── __init__.py    - call the model (RestNet18, 50 ...)
 │
 │
 ├── solver             - this folder contains optimizer of your project.
