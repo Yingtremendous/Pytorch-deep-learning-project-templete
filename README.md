@@ -1,6 +1,15 @@
 # PyTorch Project Template
 -  Load data from external source and convert it to the appropriate format for model training
     -  data to numeric values in form of tensor
+    -  tensor preprocessed via torch.transforms and grouped into batches for better training performance
+-  Train, test, optimization
+    - data for training, validation, test； loss function； optimizer 
+    - within each epoch, validate model by passing in validation data, tuning hyperparameters
+    - Test model by passing in test data
+- Model deployment
+    - clould; edge device; local production server; repo; file
+    - Postprocessing: report the confident results; go from your model's output values to the final solution.
+    
 A simple and well designed structure is essential for any Deep Learning project, so after a lot practice and contributing in pytorch projects here's a pytorch project template that combines **simplicity, best practice for folder structure** and **good OOP design**. 
 The main idea is that there's much same stuff you do every time when you start your pytorch project, so wrapping all this shared stuff will help you to change just the core idea every time you start a new pytorch project. 
 
